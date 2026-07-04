@@ -2476,7 +2476,7 @@ function bukaInvoiceDigital() {
   const match = text.match(/Invoice:\s*([\w-]+)/);
   if (match) {
     const invNo = match[1];
-    const url = `https://tukangseafood.netlify.app/invoice.html?inv=${invNo}`;
+    const url = `https://dashboard.tukangseafood.com/invoice.html?inv=${invNo}`;
     window.open(url, '_blank');
   } else {
     showToast('Invoice number tidak ditemukan', 'error');
