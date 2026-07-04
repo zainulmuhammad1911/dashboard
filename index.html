@@ -2366,7 +2366,7 @@ async function generateAndSaveInvoice() {
     return `🐟 ${i.produk}${i.ukuran ? ' (' + i.ukuran + ')' : ''}\n   ${i.qty} kg × ${fmtRp(i.harga_jual)}/kg = ${fmtRp(sub)}`;
   }).join('\n');
 
-  const netlifyUrl = 'https://tukangseafood.netlify.app';
+  const netlifyUrl = 'https://dashboard.tukangseafood.com';
   const invoiceLink = `${netlifyUrl}/invoice.html?inv=${result.invoice}`;
 
   // Ambil jam pengiriman dari catatan atau ukuran item pertama
